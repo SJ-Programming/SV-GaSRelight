@@ -52,8 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">SV-GaSRelight: Single-View Gaussian Splatting
-for 3D Human Relighting</h1>
+            <h1 class="title is-1 publication-title">SV-GaSRelight: Single-View Gaussian Splatting for 3D Human Relighting</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -145,7 +144,7 @@ for 3D Human Relighting</h1>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            In virtual environments, particularly in the Metaverse, where dynamic and interactive 3D content is essential, realistic lighting plays a crucial role in enhancing immersion. However, traditional relighting methods often rely on multi-view captures or computationally expensive neural rendering techniques, making them impractical for real-time applications. In this work, we propose SV-GaSRelight, a novel single-view 3D scene relighting approach. Our pipeline reconstructs a 3D scene from a single input image using TriplaneGaussian. We then extract camera poses and apply Neural Incident Light Field (NeILF) to introduce lighting information. Finally, we leverage Relightable 3D Gaussian Splatting, which incorporates BRDF decomposition and ray tracing, to simulate realistic lighting effects. We evaluate our method on two datasets: Synthetic4Relight and NeRF Synthetic, demonstrating its ability to generate realistic relighting effects while preserving high-quality geometry and appearance reconstruction. Our approach enables efficient, single-view scene relighting, making it highly applicable to Metaverse applications, such as VR content creation, gaming, and interactive virtual environments. In future work, we aim to extend this approach to real-world datasets and explore interactive lighting control for enhanced realism.          </p>
+            In virtual environments, where dynamic and interactive 3D content is essential, realistic lighting plays a crucial role in enhancing immersion. However, traditional relighting methods often rely on multiview captures or computationally expensive neural rendering techniques, making them impractical for real-time applications. In this work, we propose SV-GaSRelight, a novel single-view 3D scene relighting approach specifically designed for human relighting. Our main contribution is to exploit human bodies in the scene as 3D probes that can help to decompose lighting conditions from surface albedo and orientations. This is possible thanks to very powerful models that are able to reconstruct 3D human bodies from a single view. Our pipeline reconstructs a 3D human from a single input image and creates synthetic multiple views with camera poses. Then, we use Relightable 3D Gaussian, which incorporates BRDF decomposition and ray tracing, to simulate realistic lighting effects. Relightable 3D Gaussian uses Neural Incident Light Field (NeILF) to introduce lighting information in the conventional 3D Gaussian Splats. We evaluate our method by comparing results with Relightable 3D Gaussian Splatting which requires multiview input. We also evaluate performance by conducting a user study to evaluate the scene's realism. Our experimental results show that we can achieve comparable results with relightable 3D Gaussian Splatting.</p>
         </div>
       </div>
     </div>
