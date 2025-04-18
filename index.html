@@ -124,14 +124,17 @@
   </div>
 </section>
 
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <img src="static/images/pipeline.png" alt="SV-GaSRelight"/>
-      <h2 class="subtitle has-text-centered">
-        SV-GaSRelight.
-      </h2>
-    </div>
+
+<!-- TL;DR section -->
+<section class="section">
+  <div class="container">
+    <h2 class="title is-4">TL;DR</h2>
+    <ul>
+      <li>✅ Single-image input only</li>
+      <li>🎨 BRDF and visibility-aware relighting</li>
+      <li>⚡ Fast, compact and accurate</li>
+      <li>📊 Evaluated with real users</li>
+    </ul>
   </div>
 </section>
 
@@ -151,7 +154,38 @@
   </div>
 </section>
 <!-- End paper abstract -->
-
+<!-- Teaser video -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Relighting Demo</h2>
+      <video id="tree" autoplay controls muted loop width="100%">
+        <source src="static/videos/final_grid_gh.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h2 class="subtitle has-text-centered mt-4">
+        Relighting results across five scenes with different environment maps.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+<!-- Pipeline figure with walkthrough -->
+<section class="section">
+  <div class="container">
+    <h2 class="title is-3 has-text-centered">How It Works</h2>
+    <div class="columns is-centered">
+      <div class="column is-half has-text-centered">
+        <img src="static/images/pipeline.png" alt="SV-GaSRelight Pipeline">
+      </div>
+    </div>
+    <div class="content has-text-centered mt-4">
+      <p><strong>Step 1:</strong> Reconstruct 3D human from a single image using HMR-based model.</p>
+      <p><strong>Step 2:</strong> Generate synthetic views with camera poses.</p>
+      <p><strong>Step 3:</strong> Apply Relightable 3D Gaussian Splatting using BRDF + ray tracing + NeILF.</p>
+    </div>
+  </div>
+</section>
 
 <!-- Image carousel -->
 <section class="hero is-small">
